@@ -1,10 +1,10 @@
 main() {
-  print(juntar(1, 9));
-  print(juntar('batata', 'sei lá'));
-  var resultado = juntar('Ora !!!', 'oraoraoraoraoraoraoraora ... ORAAAA');
-  print(resultado);
+  print(join(1, 9));
+  print(join('potato', 'onions'));
+  var result = join('Ora !!!', 'oraoraoraoraoraoraoraora ... ORAAAA');
+  print(result);
 }
 
-String juntar(dynamic a, b) {
+String join(dynamic a, b) {
   return a.toString() + b.toString();
 }

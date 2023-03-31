@@ -1,18 +1,18 @@
 import 'dart:math';
 
 void main(List<String> args) {
-  int resultado = somar(2, 3);
-  resultado *= 2;
-  print("O dobro do resultado  é $resultado");
+  int result = sum(2, 3);
+  result *= 2;
+  print("The double of the result is $result");
 
-  print("O resultado Aleatorio é :${somarNumerAleatorios()}");
+  print("The random value is :${sumRandomNumbers()}");
 }
 
-int somar(int a, int b) {
+int sum(int a, int b) {
   return a + b;
 }
 
-int somarNumerAleatorios() {
+int sumRandomNumbers() {
   int a = Random().nextInt(11);
   int b = Random().nextInt(11);
   return a + b;
