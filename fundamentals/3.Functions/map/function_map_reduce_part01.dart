@@ -6,4 +6,15 @@ main(){
     {'name': 'Daniel', 'grade': 8.1},
     {'name': 'Bingo', 'grade': 4.9}
   ];
+
+  String Function(Map) getOnlyNames = (aluno) => aluno['name'];
+  int Function(String) getNameSize = (name) => name.length;
+  
+  var names = students.map(getOnlyNames);
+  print(names);
+
+  var namesLengths = names.map(getNameSize);
+  print(namesLengths);
+
+
 }

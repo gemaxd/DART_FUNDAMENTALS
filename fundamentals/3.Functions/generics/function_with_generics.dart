@@ -1,21 +1,21 @@
 import 'dart:io';
 
-Object secondElementV1(List lista) {
-  return lista.length >= 2 ? lista[1] : null;
+Object secondElementV1(List list) {
+  return list.length >= 2 ? list[1] : null;
 }
 
-E? secondElementV2<E>(List<E> lista) {
-  return lista.length >= 2 ? lista[1] : null;
+E? secondElementV2<E>(List<E> list) {
+  return list.length >= 2 ? list[1] : null;
 }
 
 main(){
-  var lista = [3,6,7,12,45,78,1];
+  var list = [3,2,7,12,45,78,1];
 
-  print(secondElementV1(lista));
+  print(secondElementV1(list));
 
-  int? secondElemnt = secondElementV2<int>(lista);  
+  int? secondElemnt = secondElementV2<int>(list);  
   print(secondElemnt);
 
-  secondElemnt = secondElementV2(lista);
+  secondElemnt = secondElementV2(list);
   print(secondElemnt);
 }

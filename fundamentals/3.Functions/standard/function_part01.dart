@@ -1,15 +1,15 @@
 main() {
-  somaComPrint(5, 6);
+  sumAndPrint(5, 6);
 }
 
-somaComPrint(int a, int b) {
-  printarResultado(somaDoisNumeros(a, b));
+sumAndPrint(int a, int b) {
+  printResult(sumTwoNumbers(a, b));
 }
 
-int somaDoisNumeros(int a, int b) {
+int sumTwoNumbers(int a, int b) {
   return a + b;
 }
 
-printarResultado(int result) {
-  print('O resultado é: $result');
+printResult(int result) {
+  print('The result é: $result');
 }
